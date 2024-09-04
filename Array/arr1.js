@@ -61,8 +61,8 @@
 // console.log(endGame)
 
 
-const irm=[1,4,5,[3,7],5,6,[45,65,[3,5,6]],6]
-console.log(irm.flat(4));
+// const irm=[1,4,5,[3,7],5,6,[45,65,[3,5,6]],6]
+// console.log(irm.flat(4));
 
-console.log(Array.from("ABhishek"))
-console.log(Array.from({name: "Abhishek"}))
+// console.log(Array.from("ABhishek"))
+// console.log(Array.from({name: "Abhishek"}))
