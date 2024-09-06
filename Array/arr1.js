@@ -66,3 +66,11 @@
 
 // console.log(Array.from("ABhishek"))
 // console.log(Array.from({name: "Abhishek"}))
+
+const arr=[1,2,3,4];
+const b =[...arr];
+b.push(5);
+// result wil be [1,2,3,4] becoz spread fn copy the data only
+console.log(arr);
+// here it will be [1,2,3,4,5]
+console.log(b);
