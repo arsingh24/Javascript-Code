@@ -75,19 +75,33 @@
 // console.log(Object.entries());
 // // to know that this property i available or not
 // console.log(tinderUser.hasOwnProperty('name'))
- const users= [
-   {
-        id: 1,
-        email: "ar@gmail.com",
-    },
-    {
-        id: 1,
-        email: "ar@gmail.com",
-    },
-    {
-        id: 1,
-        email: "ar@gmail.com",
-    }
 
- ]
- console.log(users)
+
+//  const users= [
+//    {
+//         id: 1,
+//         email: "ar@gmail.com",
+//     },
+//     {
+//         id: 1,
+//         email: "ar@gmail.com",
+//     },
+//     {
+//         id: 1,
+//         email: "ar@gmail.com",
+//     }
+
+//  ]
+//  console.log(users)
+
+// Destruction
+//  const course={
+//     courseName : "javascript",
+//     source : "Youtube",
+//     courseInstructor : "Hitesh",
+
+// }
+// // console.log(course.courseInstructor)
+// by this method we can destructed the object
+// const {courseInstructor: cI} = course ;
+// console.log(cI);
