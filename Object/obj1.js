@@ -30,3 +30,64 @@
 
 
 // +++++++++++++++----------------Part-2------++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const tinderUser = new Object()
+
+// tinderUser.name = "Kyu btye"
+// tinderUser.age = 24
+// console.log(tinderUser);
+
+
+// const obj1 = {
+
+// nested object is possible 
+//     userName:{
+//         fullName:{
+//             firstName: "Abhishek",
+//             lastName: "Singh"
+//         }
+//     },
+//    isComingToday: true ,
+//    today : Date(), 
+
+// }
+// by using . can access the nested object
+// console.log(obj1.userName.fullName);
+
+
+// const t1={a:1 , b:2}
+// const t2={c:3, d:4}
+
+// const t3= {t1,t2}
+// console.log(t3)
+// const t4= Object.assign(t1,t2);
+// console.log(t4);
+// const mera=Object.assign({},t1,t2,t4);
+// console.log(mera);
+
+// const t5= {...t1,...t2}
+// console.log(t5)
+// // to knows the keys of the object
+// console.log(Object.keys());
+// // to know the values of object
+// console.log(Object.values());
+// // to know all the entries
+// console.log(Object.entries());
+// // to know that this property i available or not
+// console.log(tinderUser.hasOwnProperty('name'))
+ const users= [
+   {
+        id: 1,
+        email: "ar@gmail.com",
+    },
+    {
+        id: 1,
+        email: "ar@gmail.com",
+    },
+    {
+        id: 1,
+        email: "ar@gmail.com",
+    }
+
+ ]
+ console.log(users)
