@@ -67,6 +67,8 @@
 // console.log(Array.from("ABhishek"))
 // console.log(Array.from({name: "Abhishek"}))
 
+
+// spread syntax
 const arr=[1,2,3,4];
 const b =[...arr];
 b.push(5);
