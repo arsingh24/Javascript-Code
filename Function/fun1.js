@@ -73,3 +73,17 @@
 //     console.log(arraylao);
 // }
 // arr3(arr1)
+
+
+// // by declaring this function can be called before intialization
+// function oneSum(first){
+//     console.log(first+1)
+// }
+// oneSum(5);
+
+// // by declaring this function cannot be called before intialization
+// Sums(5);
+// const Sums =function oneSum(first){
+//     console.log(first+1)
+// }
+// // it return error
