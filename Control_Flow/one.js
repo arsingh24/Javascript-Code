@@ -37,15 +37,15 @@
 //     }
 
 
-// ==========conditions statements=============
-// &&  and condition
+// ==========operator conditions statements=============
+// &&  and operator
 // const userLoggedIn = true
 // const debitCard = true
 // if (userLoggedIn && debitCard && 2==2 ) {
 // console.log("Allow to buy course")
 // }
 
-//  || or condition
+//  || or opertaor
 // const userLoggedIn = true;
 // const debitCard = true;
 // const loggedInFromGoogle = false;
