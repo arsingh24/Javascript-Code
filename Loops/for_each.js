@@ -1,3 +1,5 @@
+
+// foreach () perform the task of function in the same array without creating new array
 const coding =["js", "ruby","cpp","c"]
 
 // coding.forEach( function (item)
