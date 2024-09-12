@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // to add element 
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("java");
+
+    // to add element with optimised way
+    function addOptiLang(langName){
+        const li= document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("C++")
+
+
+    // edit
+    const secondlang = document.querySelector("li:nth-child(2)");
+    // we can use this method to change the text 
+    // secondlang.innerHTML ="Mojo";
+    const newLi = document.createElement('li');
+    newLi.textContent ="Mojo";
+    // appendchild creates a new line
+    // secondlang.appendChild(newLi);
+    secondlang.replaceWith (newLi);
+
+    // we can edit this way also 
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML="<li>TypeScript<\li>"
+
+    // to remove something 
+    const removeLang = document.querySelector('li:nth-child(2)');
+    removeLang.remove()
+</script>
+</html>
