@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 50%;
+   flex-direction: column;
+   
+}
+#banner{
+   color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+#clock{
+    background-color: orange;
+    width:140px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
