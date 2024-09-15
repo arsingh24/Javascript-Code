@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Calling</title>
+    <style>
+        body{
+            background-color: #212121;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30vh;
+            flex-direction: column;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            border: 2px solid aliceblue;
+        }
+        .text{
+            background-color: antiquewhite;
+            width: 200px;
+            height: 30px;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="card">
+        <div class="img"></div>
+        <p class="text"></p>
+    </div>
+    <button >Click Here </button>
+    </div>
+</body>
+<script>
+        let response;
+    const button = document.querySelector('button');
+    const img = document.querySelector('.img');
+    const text = document.querySelector('.text');
+   
+    button.addEventListener('click',function(){
+        const imgUrl = response.avatar_url;
+        let pro = open('GET',imgUrl)
+        img.innerHTML= pro;
+        console.log(response.avatar_url)
+        console.log(response.followers)
+        text.innerHTML = `Followers = ${response.followers}`;
+    })
+
+    // const requestUrl =  "https://api.github.com/users/arsingh24";
+    const requestUrl =  "https://api.github.com/users/hiteshchoudhary";
+    const xhr=new XMLHttpRequest();
+    xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState===4){
+         response = JSON.parse(this.responseText);
+            
+        }
+    }
+    
+    xhr.send();
+</script>
+</html>
