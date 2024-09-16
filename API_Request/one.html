@@ -48,9 +48,7 @@
     const text = document.querySelector('.text');
    
     button.addEventListener('click',function(){
-        const imgUrl = response.avatar_url;
-        let pro = open('GET',imgUrl)
-        img.innerHTML= pro;
+        img.innerHTML =`<img src="${response.avatar_url}" alt = "Image of Hitesh" width ="200px" height ="200px" />`
         console.log(response.avatar_url)
         console.log(response.followers)
         text.innerHTML = `Followers = ${response.followers}`;
