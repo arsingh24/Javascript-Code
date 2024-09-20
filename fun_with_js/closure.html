@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #313452;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // // lexical scope and its uses (it states that inner function have the access of outer function but the outer doesnt have the access of inner)
+    // function outer(){
+    //     const nu = 38902
+        
+    //     // console.log(text)
+    //     function inner(){
+    //         let text = "hii i'm pratice"
+    //         console.log(text + nu)
+    //     }
+    //     console.log(nu)
+    //     inner()
+    // }
+    // outer()
+</script>
+<script>
+    // closure (it states that when the inner is called the it comes with the outer function )
+    // document.getElementById('orange').addEventListener("click",function(){
+    //     document.body.style.backgroundColor = "orange"
+    // })
+    
+    // document.getElementById('green').addEventListener("click",function(){
+    //     document.body.style.backgroundColor = "green"
+    // })
+
+    // function clickHandler(value){
+
+    //   return  function (){
+    //         document.body.style.backgroundColor = `${value}`
+    //     }
+    // }
+
+    const clickHandler =function(value){
+
+      return   ()=>{
+            document.body.style.backgroundColor = `${value}`
+        }
+    }
+    document.getElementById('green').onclick=clickHandler("green")
+    document.getElementById('orange').onclick=clickHandler("orange")
+
+</script>
+</html>
